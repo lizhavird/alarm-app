@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet"> 
+    <title>
+        ☆☆☆☆ alarm clock! ☆☆☆☆   
+    </title>
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <link href="js-alarm-clock.css" rel="stylesheet">
+   
+  </head>
+  <body id="container">
+    <!-- [CURRENT TIME] -->
+    <div id="ctime">
+      <h1 class="header"> </h1>
+      <div class="square">
+        <div class="digits" id="chr">00</div>
+        <div class="text">hr</div>
+      </div>
+      <div class="square">
+        <div class="digits" id="cmin">00</div>
+        <div class="text">min</div>
+      </div>
+      <div class="square">
+        <div class="digits" id="csec">00</div>
+        <div class="text">sec</div>
+      </div>
+    </div>
+
+    <!-- carebear -->
+    <div id="img-box">
+      <img id ="imageOne" src ="bednow.gif"   onclick = "changeImage()"/>
+    </div>
+
+    <!-- [SET ALARM] -->
+    <div id="tpick">
+      <h1 class="header">
+        set alarm
+      </h1>
+      <div id="tpick-h"></div>
+      <div id="tpick-m"></div>
+      <div id="tpick-s"></div>
+      <div>
+        <input type="button" value="Set" id="tset"/>
+        <input type="button" value="Reset" id="treset" disabled/>
+      </div>
+    </div>
+    
+    <!-- dim screen -->
+    <span id="dimbutton">
+      <span class="dimbutton" onclick="dimScreen()">dim screen</span> 
+    </span>
+
+    <div class="overlay" id="dim">
+      <span class="close-overlay" onclick="closeOverlay()">&times;</span>
+    </div>
+  
+ 
+    <!-- [ALARM SOUND] -->
+    <audio id="alarm-sound" loop>
+      <source src="flying-colors.mp3" type="audio/mp3">
+    </audio>
+    <script src="js-alarm-clock.js"></script>
+  </body>
+</html>
