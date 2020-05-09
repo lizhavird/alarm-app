@@ -1,6 +1,6 @@
 /* [FONT] */
 #ctime, #tpick {
-    font-family: 'Abril Fatface', cursive;
+  font-family: 'Press Start 2P', cursive;
   }
   .header {
     text-align: center;
@@ -18,7 +18,7 @@
     margin: 0 auto;
     max-width: 350px;
     padding: 10px;
-    background: black;
+    background: white;
     text-align: center;
     float: left;
     border-radius:30%;
@@ -27,7 +27,7 @@
     justify-content: left;
   }
   #ctime .header {
-    color: white;
+    color: black;
   }
   #ctime .square {
     display: inline-block;
@@ -36,8 +36,8 @@
   }
   #ctime .digits {
     font-size: 24px;
-    background: #fff;
-    color: #000;
+    background:black;
+    color: pink;
     padding: 20px 10px;
     border-radius: 5px;
   }
@@ -51,7 +51,8 @@
     margin: 0 auto;
     max-width: 350px;
     padding: 10px;
-    background: #f2f2f2;
+    color:black;
+    /* background: #f2f2f2; */
     white-space: nowrap;
     display: inline-block;
     margin-left:90px;
@@ -70,7 +71,7 @@
   #tset, #treset {
     box-sizing: padding-box;
     width: 50%;
-    background: #3368b2;
+    background: pink;
     color: #fff;
     padding: 10px;
     border: 0;
